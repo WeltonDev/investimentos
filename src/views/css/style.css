@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal {
+    width: 100%;
+    height: 125vh;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.568);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100vw;
+    background-color: rgba(0, 0, 255, 0.466);
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.loading {
+   width: 100px;
+}
+
+table {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem
+}
+
+th {
+    font-size: 1.15rem;
+    width: 12rem;
+    background-color: rgba(0, 0, 0, 0.151);
+}
+
+.row {
+    background-color: aquamarine;
+    text-align: center;
+    height: 4em;    
+}
+
+.editar {
+    display: flex;
+}
+
+.quit {
+    border: none;
+    background-color: transparent;
+    font-size: 1.15rem;
+    cursor: pointer;
+    color: red;
+    padding: 0.25rem 1rem;
+}
+.quit:hover {
+    background-color: rgba(255, 0, 0, 0.233);
+    border-radius: 8px;
+
+}
+
+a {
+    margin: 1rem;
+    border: none;
+    background-color: transparent;
+    font-size: 1.15rem;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.863);
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+}
+a:hover {
+    background-color: rgb(0, 140, 255);
+    border-radius: 8px;
+}
+
+.create{
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: rgb(29, 113, 182);
+}
+
+.resposta {
+    color: red;
+}
+
+form {
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: beige;
+}
+
+.cadastrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    width: 25rem;
+}
+
+.centralizar {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty {
+    display: none;  
+}
+
+.remover:hover {
+    background-color: rgba(255, 0, 0, 0.801);
+}
+
+.btnEditar {
+    background-color: rgba(0, 128, 0, 0.5);
+    border-radius: 8px;
+    transition: .5s;
+}
+
+
+
+.btnRemover {
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 8px;
+    transition: .5s;
+}

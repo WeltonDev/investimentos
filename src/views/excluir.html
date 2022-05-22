@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>:. Cadastrar ativos .:</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./carteira.html">Carteira</a>
+            <button class="quit" onclick="sair()">Sair</button>
+        </nav>
+    </header>
+    <main class="login centralizar">
+        <!-- <img class="loading" src="./loading.gif" alt=""> -->
+<p id="resposta"></p>
+  <form>
+    <h2>Cadastrar novo ativo</h2>
+    <hr><br>
+      <label for="ticker">Ticker:</label>
+      <input class="cadastrar" type="text" id="ticker" placeholder="Ex: ITUB3" disabled><br>
+
+      <label for="grupo">Grupo:</label>
+      <input class="cadastrar" type="text" id="grupo" placeholder="Ex: ITUB3" disabled><br>
+
+
+      <label for="quantidade">Quantidade:</label>
+      <input class="cadastrar" type="number" min="1" max="1000" id="quantidade" placeholder="Ex: 50" disabled><br>
+
+      <label for="preco_medio">Preço Médio:</label>
+      <input class="cadastrar" type="number" id="preco_medio" placeholder="Ex: 10.50" disabled><br>
+
+      <label for="setor">Setor:</label>
+      <input class="cadastrar" type="text" id="setor" placeholder="Ex: Banco" disabled><br>
+
+      <a onclick="excluir()" id="btnExcluir" class="create">Excluir</a>
+      </form>
+
+    </main>
+    <script src="./js/excluir.js"></script>
+</body>
+</html>

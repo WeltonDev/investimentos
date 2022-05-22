@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>:. Cadastrar usuário .:</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./carteira.html">Carteira</a>
+            <button class="quit" onclick="sair()">Sair</button>
+        </nav>
+    </header>
+    <main class="login centralizar">
+        <!-- <img class="loading" src="./loading.gif" alt=""> -->
+<p class="resposta"></p>
+  <form>
+    <h2>Cadastrar novo usuário</h2>
+    <hr><br>
+      <label for="nome">Nome:</label>
+      <input class="cadastrar" type="text" id="nome" placeholder="Ex: João"><br>
+
+
+
+      <label for="email">Email:</label>
+      <input class="cadastrar" type="email" id="email" placeholder="joao@email.com"><br>
+
+      <label for="preco_medio">Senha</label>
+      <input class="cadastrar" type="password" id="senha" placeholder="Senha"><br>
+
+      <a onclick="cadastrar()" id="btnCriar" class="create">Cadastrar</a>
+      </form>
+
+    </main>
+    <script src="./js/cadastrarUser.js"></script>
+</body>
+</html>
